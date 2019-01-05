@@ -17,7 +17,7 @@ function curl($url, $fields = null, $cookie = null) {
         return $response;
 }
  
-$token = ''; // Access Token
+$token = 'EAAAAAYsX7TsBABZC0ZCskbRst5UuMiFlOaAcMWdaYhyc7YB2eIDrbzDI7T9CUmU0pO7ihtymdPhq13ztQHPtjdW9aCKHswug2ukaCi3pLvvVpfLLvMfPzDDKc593asKY2bwzPJEHxDt2wwEKbs5tkoX28ARQ5jO0u6E4DR62l6OhhKMT4XClP55GgsUgyU6tIXX0ZAKeycdfuqWinKD'; // Access Token
 $uu = curl("https://graph.facebook.com/me/posts?access_token=$token&limit=1000&fields=id,name");
 $ua = json_decode($uu);
  
